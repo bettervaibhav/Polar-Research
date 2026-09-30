@@ -3,6 +3,7 @@ import './globals.css';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { GlobalAssistantDrawer } from '@/components/global-assistant-drawer';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: 'POLAR SENSE AI — Polar Research Intelligence & AI Teaching',
@@ -43,6 +44,7 @@ export default function RootLayout({
         <main className="flex-1 w-full">{children}</main>
         <GlobalAssistantDrawer />
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
